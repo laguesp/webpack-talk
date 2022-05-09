@@ -20,7 +20,7 @@ module.exports = {
       // },
       {
         test: /\.(gif)$/i,
-        type: 'asset/resource',
+        type: 'asset',
       },
     ]
   },
