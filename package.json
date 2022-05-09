@@ -2,5 +2,9 @@
   "name": "js-talk-webpack",
   "description": "Improving Nearshore - Webpack talk by Luis Espinosa",
   "private": "true",
-  "scripts": {}
+  "scripts": {},
+  "devDependencies": {
+    "webpack": "^5.72.0",
+    "webpack-cli": "^4.9.2"
+  }
 }
