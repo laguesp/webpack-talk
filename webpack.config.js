@@ -1,4 +1,12 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
+
 module.exports = {
+  mode: 'development',
+  devServer: {
+    port: 3000,
+    open: true
+  },
+  devtool: 'source-map',
   module: {
     rules: [
       {
@@ -8,6 +16,11 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: './src/index.html'
+    }),
+  ],
   resolve: {
     extensions: [ '.js', '.jsx']
   }
