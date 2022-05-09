@@ -13,7 +13,15 @@ module.exports = {
         test: /\.(js|jsx|ts|tsx)$/,
         exclude: /node_modules/,
         use: { loader: 'babel-loader' }
-      }
+      },
+      // { Used to load CSS
+      //   test: /\.css$/i,
+      //   use: ['style-loader', 'css-loader'],
+      // },
+      {
+        test: /\.(gif)$/i,
+        type: 'asset/resource',
+      },
     ]
   },
   plugins: [
