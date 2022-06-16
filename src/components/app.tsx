@@ -2,6 +2,8 @@ import { getWelcomeMessage } from "../utils/welcome"
 
 import type { CSSProperties } from "react"
 
+import Gif from '../assets/image.gif'
+
 const containerStyles: CSSProperties = {
   alignItems: 'center',
   display: 'flex',
@@ -14,6 +16,7 @@ const containerStyles: CSSProperties = {
 const App = () => {
   return (
     <div style={containerStyles}>
+      <img src={Gif} />
       <h1>{getWelcomeMessage("We're awesome!!")}</h1>
     </div>
   )
