@@ -1,5 +1,6 @@
-import { CSSProperties } from "react"
 import { getWelcomeMessage } from "../utils/welcome"
+
+import type { CSSProperties } from "react"
 
 const containerStyles: CSSProperties = {
   alignItems: 'center',
