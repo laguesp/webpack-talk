@@ -1,7 +1,5 @@
 import { CSSProperties } from "react"
-import { getWelcomeMessage } from "./welcome"
-
-import BigMouthGif from './image.gif'
+import { getWelcomeMessage } from "../utils/welcome"
 
 const containerStyles: CSSProperties = {
   alignItems: 'center',
@@ -15,7 +13,6 @@ const containerStyles: CSSProperties = {
 const App = () => {
   return (
     <div style={containerStyles}>
-      <img src={BigMouthGif} />
       <h1>{getWelcomeMessage("We're awesome!!")}</h1>
     </div>
   )
